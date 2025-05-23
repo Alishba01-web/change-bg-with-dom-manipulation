@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .color-changer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .color-changer span {
+            height: 13vh;
+            width: 15vh;
+            box-shadow: 3px 1px 1px 1px rgb(253, 253, 253);
+            margin: 15px;
+            padding: 10px ;
+text-align: center;
+cursor: pointer;
+
+        }
+    
+        .color-changer span:nth-child(1){
+background-color: gray;
+        }
+        .color-changer span:nth-child(2){
+background-color: yellow;
+        }
+        .color-changer span:nth-child(3){
+background-color: green;
+        }
+        .color-changer span:nth-child(4){
+background-color: pink;
+        }
+        h3{
+            margin-bottom:30px;
+             font-size: 30px;
+             color: aliceblue;
+             background: #000;
+             padding: 20px;
+        }
+        h4{
+            margin-top:30px;
+            padding: 20px;
+             font-size: 30px;
+             background: #000;
+             color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>    
+        <h3>Color-changer</h3>
+
+    <div class="color-changer">
+        <span class="btn" id="gray">GREY</span>
+        <span class="btn" id="yellow">YELLOW</span>
+        <span class="btn" id="green">GREEN</span>
+        <span class="btn" id="pink">PINK</span>
+    </div>
+            <h4>Click just one color box then see the changing backgroud</h4>
+
+</body>
+<script src="js.js"></script>
+
+</html>
